@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let assetA = AVURLAsset(url: assetAURL)
         
         guard let audioTrackA = composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid) else {
-            debugPrint("Failed to add video track.")
+            debugPrint("Failed to add audio track.")
             return
         }
         
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         let assetB = AVURLAsset(url: assetBURL)
 
         guard let audioTrackB = composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid) else {
-            debugPrint("Failed to add video track.")
+            debugPrint("Failed to add audio track.")
             return
         }
 
