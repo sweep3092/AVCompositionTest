@@ -12,7 +12,10 @@ import AVKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var avPlayerPlayButton: UIButton!
     var videoPlayer: AVPlayer!
+    var assetA: AVURLAsset!
+    var assetB: AVURLAsset!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,7 @@ class ViewController: UIViewController {
         let composition = AVMutableComposition()
         
         let assetAURL = Bundle.main.url(forResource: "matched_a", withExtension: "mp4")!
-        let assetA = AVURLAsset(url: assetAURL)
+        assetA = AVURLAsset(url: assetAURL)
         
         guard let audioTrackA = composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid) else {
             debugPrint("Failed to add audio track.")
@@ -38,7 +41,7 @@ class ViewController: UIViewController {
         }
         
         let assetBURL = Bundle.main.url(forResource: "matched_b", withExtension: "mp4")!
-        let assetB = AVURLAsset(url: assetBURL)
+        assetB = AVURLAsset(url: assetBURL)
 
         guard let audioTrackB = composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid) else {
             debugPrint("Failed to add audio track.")
@@ -56,16 +59,25 @@ class ViewController: UIViewController {
         
         // AVPlayerで再生
         videoPlayer = AVPlayer(playerItem: AVPlayerItem(asset: composition))
-        
-        
-        
     }
+    
     @IBAction func playButtonClicked(_ sender: Any) {
         let playerController = AVPlayerViewController()
         playerController.player = videoPlayer
         self.present(playerController, animated: true, completion: {
             self.videoPlayer.play()
         })
+    }
+    
+    @IBAction func avPlayerButtonClicked(_ sender: Any) {
+        // FIXME: ここまだ動かない
+        let atHostTime: CMTime = CMClockGetTime(CMClockGetHostTimeClock())
+        let avVideoPlayerA = AVPlayer(playerItem: AVPlayerItem(asset: assetA))
+        let avVideoPlayerB = AVPlayer(playerItem: AVPlayerItem(asset: assetB))
+        avVideoPlayerA.setRate(1, time: CMTime.invalid, atHostTime: atHostTime)
+        avVideoPlayerB.setRate(1, time: CMTime.invalid, atHostTime: atHostTime)
+        avVideoPlayerA.play()
+        avVideoPlayerB.play()
     }
 }
 
