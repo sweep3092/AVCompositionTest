@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         let composition = AVMutableComposition()
         
-        let assetAURL = Bundle.main.url(forResource: "matched_a", withExtension: "mp4")!
+        let assetAURL = Bundle.main.url(forResource: "a_downconverted", withExtension: "mp4")!
         assetA = AVURLAsset(url: assetAURL)
         
         guard let audioTrackA = composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid) else {
@@ -71,13 +71,13 @@ class ViewController: UIViewController {
     
     @IBAction func avPlayerButtonClicked(_ sender: Any) {
         // FIXME: ここまだ動かない
-        let atHostTime: CMTime = CMClockGetTime(CMClockGetHostTimeClock())
-        let avVideoPlayerA = AVPlayer(playerItem: AVPlayerItem(asset: assetA))
-        let avVideoPlayerB = AVPlayer(playerItem: AVPlayerItem(asset: assetB))
-        avVideoPlayerA.setRate(1, time: CMTime.invalid, atHostTime: atHostTime)
-        avVideoPlayerB.setRate(1, time: CMTime.invalid, atHostTime: atHostTime)
-        avVideoPlayerA.play()
-        avVideoPlayerB.play()
+//        let atHostTime: CMTime = CMClockGetTime(CMClockGetHostTimeClock())
+//        let avVideoPlayerA = AVPlayer(playerItem: AVPlayerItem(asset: assetA))
+//        let avVideoPlayerB = AVPlayer(playerItem: AVPlayerItem(asset: assetB))
+//        avVideoPlayerA.setRate(1, time: CMTime.invalid, atHostTime: atHostTime)
+//        avVideoPlayerB.setRate(1, time: CMTime.invalid, atHostTime: atHostTime)
+//        avVideoPlayerA.play()
+//        avVideoPlayerB.play()
     }
 }
 
