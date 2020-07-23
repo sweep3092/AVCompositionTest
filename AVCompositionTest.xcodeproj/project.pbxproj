@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B509DD24BB56E500082FDE /* 443_down_converted.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48B509DC24BB56E500082FDE /* 443_down_converted.mp4 */; };
+		48B509DF24BB570500082FDE /* 443_original.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48B509DE24BB570500082FDE /* 443_original.mp4 */; };
+		48F8B14A24C9ABC300212615 /* VideoFileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F8B14924C9ABC300212615 /* VideoFileConverter.swift */; };
 		9B079CCC24AE370400643B0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079CCB24AE370400643B0B /* AppDelegate.swift */; };
 		9B079CCE24AE370400643B0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079CCD24AE370400643B0B /* SceneDelegate.swift */; };
 		9B079CD024AE370400643B0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079CCF24AE370400643B0B /* ViewController.swift */; };
 		9B079CD324AE370400643B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B079CD124AE370400643B0B /* Main.storyboard */; };
 		9B079CD524AE370700643B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B079CD424AE370700643B0B /* Assets.xcassets */; };
 		9B079CD824AE370700643B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B079CD624AE370700643B0B /* LaunchScreen.storyboard */; };
-		9B079CE624AE495400643B0B /* unmatched_b.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9B079CE524AE495400643B0B /* unmatched_b.mp4 */; };
-		9BB9378424AEA89B0013E725 /* matched_b.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9BB9378224AEA89B0013E725 /* matched_b.mp4 */; };
-		9BB9378524AEA89B0013E725 /* matched_a.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9BB9378324AEA89B0013E725 /* matched_a.mp4 */; };
-		9BB9378924AEBE470013E725 /* a_downconverted.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9BB9378824AEBE470013E725 /* a_downconverted.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48B509DC24BB56E500082FDE /* 443_down_converted.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 443_down_converted.mp4; sourceTree = "<group>"; };
+		48B509DE24BB570500082FDE /* 443_original.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 443_original.mp4; sourceTree = "<group>"; };
+		48F8B14924C9ABC300212615 /* VideoFileConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFileConverter.swift; sourceTree = "<group>"; };
 		9B079CC824AE370400643B0B /* AVCompositionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCompositionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B079CCB24AE370400643B0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B079CCD24AE370400643B0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +30,6 @@
 		9B079CD424AE370700643B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B079CD724AE370700643B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B079CD924AE370700643B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B079CE524AE495400643B0B /* unmatched_b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = unmatched_b.mp4; sourceTree = "<group>"; };
-		9BB9378224AEA89B0013E725 /* matched_b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = matched_b.mp4; path = ../../../../../Desktop/matched_b.mp4; sourceTree = "<group>"; };
-		9BB9378324AEA89B0013E725 /* matched_a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = matched_a.mp4; path = ../../../../../Desktop/matched_a.mp4; sourceTree = "<group>"; };
-		9BB9378824AEBE470013E725 /* a_downconverted.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = a_downconverted.mp4; path = ../../../../../Desktop/a_downconverted.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +69,9 @@
 				9B079CD424AE370700643B0B /* Assets.xcassets */,
 				9B079CD624AE370700643B0B /* LaunchScreen.storyboard */,
 				9B079CD924AE370700643B0B /* Info.plist */,
-				9BB9378824AEBE470013E725 /* a_downconverted.mp4 */,
-				9BB9378324AEA89B0013E725 /* matched_a.mp4 */,
-				9BB9378224AEA89B0013E725 /* matched_b.mp4 */,
-				9B079CE524AE495400643B0B /* unmatched_b.mp4 */,
+				48B509DE24BB570500082FDE /* 443_original.mp4 */,
+				48B509DC24BB56E500082FDE /* 443_down_converted.mp4 */,
+				48F8B14924C9ABC300212615 /* VideoFileConverter.swift */,
 			);
 			path = AVCompositionTest;
 			sourceTree = "<group>";
@@ -138,12 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B079CD824AE370700643B0B /* LaunchScreen.storyboard in Resources */,
-				9BB9378924AEBE470013E725 /* a_downconverted.mp4 in Resources */,
+				48B509DD24BB56E500082FDE /* 443_down_converted.mp4 in Resources */,
+				48B509DF24BB570500082FDE /* 443_original.mp4 in Resources */,
 				9B079CD524AE370700643B0B /* Assets.xcassets in Resources */,
-				9BB9378524AEA89B0013E725 /* matched_a.mp4 in Resources */,
-				9BB9378424AEA89B0013E725 /* matched_b.mp4 in Resources */,
 				9B079CD324AE370400643B0B /* Main.storyboard in Resources */,
-				9B079CE624AE495400643B0B /* unmatched_b.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +151,7 @@
 			files = (
 				9B079CD024AE370400643B0B /* ViewController.swift in Sources */,
 				9B079CCC24AE370400643B0B /* AppDelegate.swift in Sources */,
+				48F8B14A24C9ABC300212615 /* VideoFileConverter.swift in Sources */,
 				9B079CCE24AE370400643B0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S7HKX3S5M;
+				DEVELOPMENT_TEAM = Q5KVTQ4S95;
 				INFOPLIST_FILE = AVCompositionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S7HKX3S5M;
+				DEVELOPMENT_TEAM = Q5KVTQ4S95;
 				INFOPLIST_FILE = AVCompositionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
